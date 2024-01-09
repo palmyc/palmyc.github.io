@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'PixelOperator';
+    src: url('../fonts/PixelOperator.ttf');
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+p, h1, h2, h3 {
+    font-family: 'PixelOperator', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+
+@keyframes idleText {
+    0%, 100% { transform: translateY(5px); }
+    50% { transform: translateY(-12px); }
+}
+
