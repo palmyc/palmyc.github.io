@@ -6,3 +6,10 @@
 p {
     animation: fadeIn 2s ease-in-out;
 }
+
+.noa-text {
+    font-size: 10px;
+    animation: idleText 2s infinite;
+    font-family: PixelOperator,sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

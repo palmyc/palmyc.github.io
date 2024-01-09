@@ -28,3 +28,9 @@ p, h1, h2, h3 {
     50% { transform: translateY(-12px); }
 }
 
+.noa-text {
+    font-size: 28px;
+    animation: idleText 2s infinite;
+    font-family: PixelOperator,sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

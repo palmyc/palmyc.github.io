@@ -9,19 +9,22 @@
     </head>
     <body>
         <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <p id="message" style="animation: idleText 2s infinite; font-family: PixelOperator,sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+            <p id="initialMessage" style="animation: idleText 2s infinite; font-family: PixelOperator,sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+            </p>
+            <p id="longMessage" class="noa-text">
             </p>
         </div>
+
         <script src="js/writing.js"></script>
         <script>
             window.onload = function() {
-                typeWriter("so you've came seeking comfort, didn't you?", "message", 100);
-                fadeIn("message");
+                typeWriter("so you've came seeking comfort, didn't you?", "initialMessage", 100);
+                fadeIn("initialMessage");
 
                 setTimeout(function() {
-                    document.getElementById("message").innerHTML = '';
-                    typeWriter("Noa, my baby. I may be a bit busy sometimes. but that doesn't mean I don't think about you. every second away from you feels like an eternity. you're my everything, darling. i want you to know that no matter how busy I get, I'll always come back to you. you mean the world to me and I wouldn't trade that love for anything. so you take care of yourself, okay? And remember, no matter where I am or what I'm doing, my heart is always with you. I love you more.", "message", 50);
-                    fadeIn("message");
+                    document.getElementById("initialMessage").innerHTML = '';
+                    typeWriter("Noa, my baby. I may be a bit busy sometimes. but that doesn't mean I don't think about you. every second away from you feels like an eternity. you're my everything, darling. i want you to know that no matter how busy I get, I'll always come back to you. you mean the world to me and I wouldn't trade that love for anything. so you take care of yourself, okay? And remember, no matter where I am or what I'm doing, my heart is always with you. I love you more.", "longMessage", 50);
+                    fadeIn("longMessage");
                 }, 10000);
             };
         </script>
