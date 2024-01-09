@@ -6,8 +6,3 @@
 p {
     animation: fadeIn 2s ease-in-out;
 }
-
-body {
-    height: 100%;
-    overflow: hidden;
-}
