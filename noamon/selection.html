@@ -23,7 +23,14 @@
 
                 setTimeout(function() {
                     document.getElementById("initialMessage").innerHTML = '';
-                    typeWriter("you are here again, well let me tell you what I like about you today. the way you view things in this world, i like it so much, the way with one word you can control my mood, the way your pretty eyes look, the way you accepted me for things i never accepted myself for. i like your adorable voice, it makes me wanna scream on my pillow. i like everything about you Noa, thank you so much for everything.", "longMessage", 50);
+                    fetch("reassurance_text.txt")
+                        .then((res) => res.text())
+                        .then((text) => {
+                            console.log(text);
+                            typeWriter(text, "longMessage", 50);
+
+                        })
+                        .catch((e) => console.error(e));
                     fadeIn("longMessage");
                 }, 10000);
             };
