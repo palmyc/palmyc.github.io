@@ -1,0 +1,325 @@
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+  
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+  
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+  
+
+  
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+  
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+  
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+  
+
+textarea {
+    resize: vertical;
+}
+  
+
+.hidden,
+  [hidden] {
+    display: none !important;
+}
+  
+
+  
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+}
+
+  
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+  
+.invisible {
+    visibility: hidden;
+}
+
+  
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+  
+.clearfix::after {
+    clear: both;
+}
+
+  
+@media only screen and (min-width: 35em) {
+
+}
+  
+@media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+
+}
+
+html, body {
+  margin:  0;
+  padding:  0;
+  height:  100%;
+  font: normal  75% Arial, Helvetica, sans-serif;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@keyframes slideDown {
+  0% {
+   transform: translateY(-100%);
+   opacity:  0;
+ }
+  100% {
+   transform: translateY(0);
+   opacity:  1;
+ }
+}
+
+.image-container img {
+ max-width:   100%;
+ height: auto;
+ animation: slideDown  1s ease-out forwards; /* Replace  1s with desired duration */
+}
+
+
+/* Target only the image with the class 'custom-image' */
+@keyframes fadeIn {
+  0% {
+   opacity:  0;
+ }
+  100% {
+   opacity:  1;
+ }
+}
+
+.custom-image {
+ position: absolute;
+ top:   50%;
+ left:   50%;
+ transform: translate(-50%, -50%);
+ width:   30%;
+ height: auto;
+ animation: fadeIn  2s ease-in forwards; /* Replace  2s with desired duration */
+}
+
+.custom-para {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 32%;
+  left: 27%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ffd9b3;
+}
+
+.container-x {
+  position: relative;
+  height:  100vh; /* Adjust as needed, could be a specific pixel value */
+}
+
+
+canvas { 
+    display: block;
+}
+
+#particles-js { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #ff5757; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%;
+    filter: blur(2px);
+    z-index:-1;
+ } 
+    
+.count-particles { 
+    background: #000022; 
+    position: absolute; 
+    top: 48px; 
+    left: 0; 
+    width: 80px; 
+    color: #13E8E9; 
+    font-size: .8em; 
+    text-align: left; 
+    text-indent: 4px; 
+    line-height: 14px; 
+    padding-bottom: 2px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+} 
+
+.js-count-particles { 
+    font-size: 1.1em; 
+} 
+
+#stats, .count-particles { 
+    margin-top: 5px; 
+    margin-left: 5px; 
+
+} 
+
+#stats { 
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden; 
+} 
+
+
+.count-particles{ border-radius: 0 0 3px 3px; }
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@keyframes glowing {
+    0% { text-shadow:   0   0   5px #fff,   0   0   10px #fff,   0   0   15px #fff,   0   0   20px #fff;}
+    100% { text-shadow:   0   0   10px #fff,   0   0   20px #fff,   0   0   30px #fff,   0   0   40px #fff;}
+}
+
+ 
+ #large-text {
+   position: fixed;
+   top:  10%;
+   left:  50%;
+   transform: translate(-50%, -50%);
+   font-family: 'Montserrat', sans-serif;
+   font-size:  5em;  
+   font-weight:  700;  
+   color: #ffffff;
+   text-align: center;
+   text-decoration: none;
+   z-index:  1;
+   animation: glowing  2s infinite alternate;
+ }
+ 
+ #large-text::after {
+   content: '';
+   display: block;
+   width:  100%;
+   height:  2px;
+   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   background-clip: text;
+ }
+ 
+ #long-text {
+   position: fixed;
+   top: 15%;
+   left:  50%;
+   transform: translateX(-50%);
+   font-size:  1.5em;
+   max-width:  80%;
+   text-align: center;
+   color: #ffffff;
+   z-index:  1;
+ }
